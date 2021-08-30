@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@1,200&display=swap');
+
+body{
+    width: 100vw; /* viewport width */
+    height: 100vh; /* viewport heigth */
+}
+
+* {
+    margin: 0;
+}
+.principal{
+    background-color:#E0EBE8;
+    width: 100%;
+    height: 100%;
+    font-family: 'Glory', sans-serif;
+}
+
+#nombre, #descripcion {
+    color: #4AB19A;
+    text-align: center;
+ 
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.titulo {
+   padding-top: 200px;
+}
+header {
+    width: 100%;
+    display: flex;
+}
+
+nav {
+    width: 50%;  
+ 
+}
+a{
+    justify-content: space-evenly;
+}
