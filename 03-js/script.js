@@ -31,5 +31,30 @@ let preguntas = [
     }
 ];
 
-let respuestaUsuario = prompt(preguntas[0].texto + "\n" + preguntas[0].opciones[0] + "\n" + preguntas[0].opciones[1] + "\n" + preguntas[0].opciones[2] + "\n" + preguntas[0].opciones[3]);
+let pregunta = Math.random() * (preguntas.length - 1);
+
+pregunta = Math.round(pregunta);
+
+//console.log(pregunta);
+
+function generarMensaje(x){
+    let mensaje = preguntas[x].texto;
+    for (let i in preguntas[x].opciones){
+        mensaje = mensaje + "\n" + (Number(i) + 1) + " " + preguntas[x].opciones[i];
+    }
+    return mensaje;
+}
+
+
+let resp = prompt(generarMensaje(pregunta));
+
+resp = Number(resp);
+
+//console.log(typeof resp);
+
+if ((resp - 1) === preguntas[pregunta].respuesta) {
+    alert("La respuesta es correcta");
+} else{
+    alert("La respuesta es incorrecta");
+}
 
