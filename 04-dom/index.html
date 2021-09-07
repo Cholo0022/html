@@ -8,12 +8,34 @@
     <title>DOM</title>
   </head>
   <body>
-    <h1 id="titulo">DOM</h1>
-    <div id="seccion"></div>
+    <h1 class="cabecera">Piedra, papel o tijera</h1>
+    <div class="contenedor">
+      <div class="imagenes">
+        <div class="imagen">
+          <span class="titulo">PIEDRA</span>
+          <div class="img">
+            <img src="piedra.png" alt="Piedra" height="100" />
+          </div>
+        </div>
+        <div class="imagen">
+          <span class="titulo">PAPEL</span>
+          <div class="img">
+            <img src="papel.png" alt="Papel" height="150" />
+          </div>
+        </div>
+        <div class="imagen">
+          <span class="titulo">TIJERA</span>
+          <div class="img">
+            <img src="tijera.png" alt="Tijera" height="150" />
+          </div>
+        </div>
+      </div>
+      <div class="lucha">
+        <img class="jugador" src="piedra.png" alt="Piedra" height="100" />
 
-    <button id="boton">Clickear</button>
-
-    <input type="text" id="input" />
+        <img class="maquina" src="piedra.png" alt="Piedra" height="100" />
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

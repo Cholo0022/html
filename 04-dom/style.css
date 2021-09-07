@@ -1,1 +1,50 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.cabecera{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.titulo{
+    font-size: 1,7rem;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    text-align: center;
+    margin: 20px;
+}
+
+.img{
+    margin-top: 20px;
+    height: 150px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jugador, .maquina{
+    margin: 50px;
+}
