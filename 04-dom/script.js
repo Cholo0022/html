@@ -1,13 +1,22 @@
-let opcionUsuario;
-
 const opciones = ["piedra", "papel", "tijera"];
 
 
-function opcionSelecionada(e){
-    let opcionComputadora = Math.round(Math.random()*2);
-    console.log(opcionComputadora);
-    opcionUsuario = e.target.id;
-    console.log(chequearOpcion(opcionUsuario, opciones[opcionComputadora]));   
+function comenzarJuego(e, jugador, maquina) {
+    return function () {
+        jugador.classList.remove("clase-animacion");
+        maquina.classList.remove("clase-animacion");
+        let opcionComputadora = Math.round(Math.random()*2);
+        let opcionUsuario = e.target.id;
+        console.log(chequearOpcion(opcionUsuario, opciones[opcionComputadora]));   
+    }
+}
+
+function opcionSelecionada(e) {
+    let jugador = document.getElementById("jugador");
+    let maquina = document.getElementById("maquina");
+    jugador.classList.add("clase-animacion");
+    maquina.classList.add("clase-animacion");
+    setTimeout(comenzarJuego(e, jugador,maquina), 2100);
 }
 
 

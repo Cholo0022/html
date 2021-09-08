@@ -48,9 +48,23 @@ body {
 
 .jugador,
 .maquina {
-  margin: 50px;
+  margin: 50px;  
+}
+
+.clase-animacion{
+  animation-name: animacion;
+  animation-duration: 700ms;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .img img {
   z-index: -1;
+}
+
+@keyframes animacion{
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-20px);}
+  100%{transform: translateY(0px);}
 }
