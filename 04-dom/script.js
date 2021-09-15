@@ -1,5 +1,5 @@
 const opciones = ["piedra", "papel", "tijera"];
-const url = "http://localhost/04-dom/";
+const url = "http://localhost/programar101/04-dom/";
 
 function comenzarJuego(e, jugador, maquina) {
     return function () {
