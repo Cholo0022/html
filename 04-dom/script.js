@@ -1,5 +1,5 @@
 const opciones = ["piedra", "papel", "tijera"];
-const url = "http://localhost/04-dom/";
+const url = "http://localhost/programar101/04-dom/";
 
 function comenzarJuego(e, jugador, maquina) {
     return function () {
@@ -27,33 +27,44 @@ function opcionSelecionada(e) {
     setTimeout(comenzarJuego(e, jugador,maquina), 1500);
 }
 
-function chequearOpcion(opcionUsuario, opcionComputadora){
-    if (opcionUsuario === opcionComputadora) return "Empate";
-    if (opcionUsuario === "piedra"){
-        switch (opcionComputadora){
+function chequearOpcion(opcionUsuario, opcionComputadora) {
+    let mensaje = document.getElementById("resultado");
+    let texto;
+    if (opcionUsuario === opcionComputadora) texto = "Empate!!!";
+    
+    if (opcionUsuario === "piedra") {
+        switch (opcionComputadora) {
             case "papel":
-                return "Perdiste";
+                texto = "Perdiste!!!";
+                break;
             case "tijera":
-                return "Ganaste";
+                texto = "Ganaste!!!";
+                break;
         }
     }
-    if (opcionUsuario === "papel"){
-        switch (opcionComputadora){
+    if (opcionUsuario === "papel") {
+        switch (opcionComputadora) {
             case "piedra":
-                return "Ganaste";
+                texto = "Ganaste!!!";
+                break;
             case "tijera":
-                return "Perdiste";
+                texto = "Perdiste!!!";
+                break;
         }
     }
-    if (opcionUsuario === "tijera"){
-        switch (opcionComputadora){
+    if (opcionUsuario === "tijera") {
+        switch (opcionComputadora) {
             case "piedra":
-                return "Perdiste";
+                texto = "Perdiste!!!";
+                break;
             case "papel":
-                return "Ganaste";
+                texto = "Ganaste!!!";
+                break;
         }
     }
+    mensaje.textContent = texto;
 }
+
 
 let piedra = document.getElementById("piedra");
 let papel = document.getElementById("papel");
