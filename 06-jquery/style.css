@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;  
+    margin: 0%;  
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.cuadro{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.rojo{
+    background-color: #e5383b;
+}
+
+.azul{
+    background-color: #1368aa;
+}
+
+.verde{
+ background-color: #52b788;
+}
+
+.amarillo{
+background-color: #fdc500;
+}
+
+.rojo-oscuro{
+    background-color: #a4161a;
+}
+
+.azul-oscuro{
+    background-color: #033270;
+}
+
+.verde-oscuro{
+    background-color: #2d6a4f;
+}
+
+.amarillo-oscuro{
+    background-color: #ffd500;
+}
