@@ -17,15 +17,17 @@
   </head>
   <body>
     <h1>Simon, el juego de la memoría</h1>
-    <button type="button" class="btn btn-primary">Jugar</button><br />
+    <button id="comenzar" type="button" class="btn btn-primary">
+      COMENZAR JUEGO</button
+    ><br />
     <div class="contenedor">
-      <div class="cuadro rojo"></div>
-      <div class="cuadro azul"></div>
-      <div class="cuadro verde"></div>
-      <div class="cuadro amarillo"></div>
+      <div id="rojo" class="cuadro rojo"></div>
+      <div id="azul" class="cuadro azul"></div>
+      <div id="verde" class="cuadro verde"></div>
+      <div id="amarillo" class="cuadro amarillo"></div>
     </div>
 
-    <h2>Puntaje <span class="puntaje"></span></h2>
+    <h2>Puntaje <span id="puntaje"></span></h2>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./script.js"></script>
