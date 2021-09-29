@@ -9,6 +9,8 @@ function opcionAleatoria() {
 }
 
 function comenzarJuego() {
+  $("#finDelJuego").text(" ");
+  $("#puntaje").text("");
   $(".cuadro").unbind();
   $(".cuadro").click(chequearOpcion);
   listaJugador = [];
@@ -44,7 +46,8 @@ function chequearOpcion(e) {
 }
 
 function perdio() {
-  $("#puntaje").text(listaMaquina.length - 1);
+  $("#finDelJuego").text("Fallaste.... Fin del juego");
+  $("#puntaje").text("Puntaje: " + (listaMaquina.length - 1));
   console.log(listaMaquina.length);
   listaJugador = [];
   listaMaquina = [];

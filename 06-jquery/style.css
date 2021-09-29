@@ -9,16 +9,17 @@ body {
   padding: 0;
 }
 
-.contenedor {
+/*.contenedor {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-}
+}*/
 
 .cuadro {
-  width: 200px;
-  height: 200px;
+  width: 200px !important;
+  height: 200px !important;
   cursor: pointer;
+  margin: 0;
 }
 
 .azul {

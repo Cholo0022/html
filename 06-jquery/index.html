@@ -16,19 +16,35 @@
     <title>Jquery</title>
   </head>
   <body>
-    <h1>Simon, el juego de la memoría</h1>
-    <button id="comenzar" type="button" class="btn btn-primary">
-      COMENZAR JUEGO</button
-    ><br />
-    <div class="contenedor">
-      <div id="rojo" class="cuadro rojo"></div>
-      <div id="azul" class="cuadro azul"></div>
-      <div id="verde" class="cuadro verde"></div>
-      <div id="amarillo" class="cuadro amarillo"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Simon, el juego de la memoría</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button id="comenzar" type="button" class="btn btn-primary">
+            COMENZAR JUEGO
+          </button>
+          <br />
+        </div>
+      </div>
+      <div class="row">
+        <div class="row justify-content-center">
+          <div id="rojo" class="cuadro rojo col-4"></div>
+          <div id="azul" class="cuadro azul col-4"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div id="verde" class="cuadro verde col-4"></div>
+          <div id="amarillo" class="cuadro amarillo col-4"></div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <h2 id="finDelJuego"></h2>
+        <h2><span id="puntaje"></span></h2>
+      </div>
     </div>
-
-    <h2>Puntaje <span id="puntaje"></span></h2>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./script.js"></script>
   </body>
