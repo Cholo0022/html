@@ -19,11 +19,13 @@ function comenzarJuego() {
 
 function agregarOpcion(opcion) {
   listaMaquina.push(opcion);
-  for (let op of listaMaquina) {
-    $("#" + op).addClass(op + "-oscuro");
+  for (let i in listaMaquina) {
     setTimeout(function () {
-      $("#" + op).removeClass(op + "-oscuro");
-    }, 1000);
+      $("#" + listaMaquina[i]).addClass(listaMaquina[i] + "-oscuro");
+      setTimeout(function () {
+        $("#" + listaMaquina[i]).removeClass(listaMaquina[i] + "-oscuro");
+      }, 500);
+    }, i * 1000);
   }
 }
 
